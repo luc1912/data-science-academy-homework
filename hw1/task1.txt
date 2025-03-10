@@ -1,0 +1,5 @@
+The event that could be improved is ads_impression_custom. Without sufficient tracking data, this event on its own doesn’t provide much value. To enhance it, I would split it into two events: add_click and add_dismiss. This would make ad optimization much more efficient.
+
+Also, it might be valuable to track the duration for how long a user has been following a team/player/something else before unfollowing it. This could help to identify accidental follows, tracking popularity trends, and understanding user engagement patterns.
+
+Another event that could potentially be deprecated is drawer_action. This event tracks when a user clicks an option in the menu, which happens frequently and may clutter the database with data that isn’t particularly insightful. Many users may open the app out of boredom, randomly clicking through options and closing the app quickly. Given its high frequency and limited insights, it seems less valuable compared to other data.
