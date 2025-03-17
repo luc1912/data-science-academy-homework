@@ -1,12 +1,12 @@
 # SofaScore Data Science Academy
 
 ## Homework 1
-- event-based analytics
-- data quality assessment
-- data pipeline exploration using SQL
+- Event-based analytics
+- Data quality assessment
+- Data pipeline exploration using SQL
 
 ## Homework 2
-- a hands-on task for the ETL process
-- Extracting Data – Retrieve data from various sources using paramiko, zipfile, and clickhouse-driver
-- Transforming Data – Process and clean the data using pandas
-- Loading Data – Store the processed data using the ClickHouse client
+- D hands-on task for the ETL process
+- Extracting Data – retrieving data from various sources using paramiko, zipfile, and clickhouse-driver
+- Transforming Data – Processing and clean the data using pandas
+- Loading Data – storing the processed data using the ClickHouse client
