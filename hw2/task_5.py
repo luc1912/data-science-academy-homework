@@ -64,7 +64,7 @@ def upload_to_clickhouse():
     try:
         data = pd.read_csv(FILE_PATH, chunksize=50000)  # reading CSV in chunks of 50k rows
         for chunk_num, chunk in enumerate(data, start=1):
-            chunk["id"] = pd.to_numeric(chunk["id"], errors="coerce").astype("Int64")
+            chunk["id"] = pd.to_numeric(chunk["id"]).astype("Int64")
             chunk["eventDate"] = chunk["eventDate"].astype(str)
             chunk["eventName"] = chunk["eventName"].astype(str)
             chunk["userPseudoId"] = chunk["userPseudoId"].astype(str)
