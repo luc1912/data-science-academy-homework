@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  data_import:
+    build: .
+    container_name: data_import_container
+    volumes:
+      - ./data:/app/data            
+      - ./raw_data:/app/raw_data    
+      - ./scripts:/app/scripts      
+    environment:
+      - CLICKHOUSE_HOST=37.59.22.112
+      - CLICKHOUSE_PORT=9000
+      - CLICKHOUSE_USER=lrunjic
+      - CLICKHOUSE_PASSWORD=frB210Ajo88Y8H9afHv5
+      - CLICKHOUSE_DATABASE=lrunjic
+    depends_on:
+      - clickhouse
+    command: ["python", "scripts/main.py"]  
+
+  clickhouse:
+    image: yandex/clickhouse-server:latest
+    container_name: clickhouse
+    ports:
+      - "8123:8123"
+      - "9000:9000"
+
+# after starting with docker-compose up -d
+# we can use command: docker logs data_import_container to see the logs
+# to stop the containers use: docker-compose down
