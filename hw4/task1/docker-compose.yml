@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:latest
+    container_name: clickhouse
+    hostname: clickhouse
+    volumes:
+      - clickhouse_data:/var/lib/clickhouse
+    ports:
+      - "8123:8123"  
+      - "9000:9000"  
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
+      GF_INSTALL_PLUGINS: grafana-clickhouse-datasource
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      - clickhouse
+
+volumes:
+  clickhouse_data:
+  grafana_data:
