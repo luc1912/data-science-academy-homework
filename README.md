@@ -20,5 +20,5 @@
 - Dockerized data import into ClickHouse, processed the dataset, and created visualizations in Grafana
 
 ## Homework 5
-- Creating visualisations for product and growth metrics using SQL queries with the Superset visualization tool
+- Creating visualizations for product and growth metrics using SQL queries with the Superset visualization tool
 - Creating a report for stakeholders
