@@ -14,3 +14,11 @@
 ## Homework 3
 - Explored different ClickHouse table engines, compression methods, and codecs for optimized storage and query performance
 - Using dictionaries and (materialized) views for efficient data access and query management
+
+## Homework 4
+- Deployed ClickHouse and Grafana using Docker Compose and configured Grafana to visualize data from ClickHouse
+- Dockerized data import into ClickHouse, processed the dataset, and created visualizations in Grafana
+
+## Homework 5
+- Creating visualizations for product and growth metrics using SQL queries with the Superset visualization tool
+- Creating a report for stakeholders
