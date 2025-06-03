@@ -34,16 +34,21 @@
 - Forecasted data using various methods (ARIMA, exponential smoothing, naive forecast, seasonal naive forecast, mean forecast)  
 - Created visualizations of forecast results in Superset  
 
-## Machine Learning
-
 ### Homework 7
 - Performed an A/B test to compare metrics for the new feature between control and treatment group  
 - Statistically analyzed the metrics of both groups  
-- Wrote a report interpreting the results for stakeholders  
+- Wrote a report interpreting the results for stakeholders
+- 
+## Machine Learning
 
 ### Homework 8
 - Built machine learning models to classify users as organic or paid  
 - Achieved top performance with XGBoost, KNN, RandomForestClassifier, VotingClassifier, and a custom fully connected network (FCN)  
 - Evaluated and compared models using multiple metrics for a well-rounded analysis  
 - Improved model performance through hyperparameter tuning with grid search  
-- Saved the best-performing model using pickle for future use  
+- Saved the best-performing model using pickle for future use
+
+### Homework 9
+- Extracted data about users and the teams they follow from the ClickHouse database using Python clickhouse-driver
+- Created a simple system for personalized event recommendations for users on a weekly basis based on the teams they follow
+- For users without direct recommendations, found the 10 most similar users and generated recommendations based on their preferences
